@@ -1,0 +1,47 @@
+.display {
+    border-radius: 10px;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header Container */
+.header {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Title Styling */
+#title {
+    font-size: 3rem;
+    color: whitesmoke;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    animation: fadeInOut 4s ease-in-out;
+}
+
+/* Keyframes for Fade In and Fade Out Effect */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    25% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    75% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+}

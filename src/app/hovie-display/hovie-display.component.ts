@@ -12,6 +12,7 @@ import { Movie8Component } from "../movie8/movie8.component";
 import { Movie9Component } from "../movie9/movie9.component";
 import { Movie10Component } from "../movie10/movie10.component";
 import { MaindisComponent } from "../maindis/maindis.component";
+import { HomeDisComponent } from "../Home-Dis/Home-Dis.component";
 
 export class HovieDisplayComponent extends EzComponent {
     protected dis: MaindisComponent = new MaindisComponent();
@@ -25,9 +26,11 @@ export class HovieDisplayComponent extends EzComponent {
     protected movv8: Movie8Component = new Movie8Component();
     protected movv9: Movie9Component = new Movie9Component();
     protected movv10: Movie10Component = new Movie10Component();
+    protected homdis: HomeDisComponent = new HomeDisComponent();
 
     constructor() {
         super(html, css);
+        this.addComponent(this.homdis, "main");
     }
 
     @Click("mov1")
@@ -41,6 +44,7 @@ export class HovieDisplayComponent extends EzComponent {
         this.removeComponent(this.movv8);
         this.removeComponent(this.movv9);
         this.removeComponent(this.movv10);
+        this.removeComponent(this.homdis);
         this.addComponent(this.movv1, "main");
     }
 
@@ -55,6 +59,7 @@ export class HovieDisplayComponent extends EzComponent {
         this.removeComponent(this.movv8);
         this.removeComponent(this.movv9);
         this.removeComponent(this.movv10);
+        this.removeComponent(this.homdis);
         this.addComponent(this.movv2, "main");
     }
 
@@ -69,6 +74,7 @@ export class HovieDisplayComponent extends EzComponent {
         this.removeComponent(this.movv8);
         this.removeComponent(this.movv9);
         this.removeComponent(this.movv10);
+        this.removeComponent(this.homdis);
         this.addComponent(this.movv3, "main");
     }
 
@@ -83,6 +89,7 @@ export class HovieDisplayComponent extends EzComponent {
         this.removeComponent(this.movv8);
         this.removeComponent(this.movv9);
         this.removeComponent(this.movv10);
+        this.removeComponent(this.homdis);
         this.addComponent(this.movv4, "main");
     }
 
@@ -97,6 +104,7 @@ export class HovieDisplayComponent extends EzComponent {
         this.removeComponent(this.movv8);
         this.removeComponent(this.movv9);
         this.removeComponent(this.movv10);
+        this.removeComponent(this.homdis);
         this.addComponent(this.movv5, "main");
     }
 
@@ -111,6 +119,7 @@ export class HovieDisplayComponent extends EzComponent {
         this.removeComponent(this.movv8);
         this.removeComponent(this.movv9);
         this.removeComponent(this.movv10);
+        this.removeComponent(this.homdis);
         this.addComponent(this.movv6, "main");
     }
 
@@ -125,6 +134,7 @@ export class HovieDisplayComponent extends EzComponent {
         this.removeComponent(this.movv8);
         this.removeComponent(this.movv9);
         this.removeComponent(this.movv10);
+        this.removeComponent(this.homdis);
         this.addComponent(this.movv7, "main");
     }
 
@@ -139,6 +149,7 @@ export class HovieDisplayComponent extends EzComponent {
         this.removeComponent(this.movv4);
         this.removeComponent(this.movv9);
         this.removeComponent(this.movv10);
+        this.removeComponent(this.homdis);
         this.addComponent(this.movv8, "main");
     }
 
@@ -153,6 +164,7 @@ export class HovieDisplayComponent extends EzComponent {
         this.removeComponent(this.movv8);
         this.removeComponent(this.movv4);
         this.removeComponent(this.movv10);
+        this.removeComponent(this.homdis);
         this.addComponent(this.movv9, "main");
     }
 
@@ -167,6 +179,7 @@ export class HovieDisplayComponent extends EzComponent {
         this.removeComponent(this.movv8);
         this.removeComponent(this.movv9);
         this.removeComponent(this.movv4);
+        this.removeComponent(this.homdis);
         this.addComponent(this.movv10, "main");
     }
 }

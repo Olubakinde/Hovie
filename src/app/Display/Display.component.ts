@@ -17,8 +17,8 @@ export class DisplayComponent extends EzComponent {
         // Remove the home component after 5 seconds
         setTimeout(() => {
             this.removeComponent(this.home);
+            this.addComponent(this.maindis, "dishome");
         }, 5000);
-        this.addComponent(this.maindis, "dishome");
 
         this.maindis.signEvent.subscribe((id: string) => {
             if (id === "") {
